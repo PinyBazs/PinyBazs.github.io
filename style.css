@@ -35,8 +35,8 @@
   max-width: 400px;
   border-radius: 10px;
   opacity: 0%;
-  -webkit-animation: beVisible 5s 2s forwards;
-          animation: beVisible 5s 2s forwards;
+  -webkit-animation: beVisible 3s forwards;
+          animation: beVisible 3s forwards;
 }
 
 #brand-container {
@@ -79,18 +79,6 @@
   font-weight: 100;
 }
 
-.fly {
-  font-family: "Oleo Script Swash Caps", cursive;
-  font-size: 60px;
-  color: rgb(63, 138, 196);
-}
-
-.bird {
-  font-family: "Inspiration", cursive;
-  font-size: 60px;
-  color: rgb(94, 182, 251);
-}
-
 #logo {
   width: 50px;
   height: 50px;
@@ -106,6 +94,26 @@
   #main-bg {
     width: auto;
     height: 100%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  #main-bg {
+    display: none;
+  }
+  body {
+    background-image: url("./assets/BG.jpg");
+  }
+}
+@media screen and (max-height: 400px) {
+  #main-bg {
+    display: none;
+  }
+  body {
+    background-image: url("./assets/BG.jpg");
+  }
+  #form-container {
+    position: absolute;
+    top: 0;
   }
 }
 @-webkit-keyframes beVisible {
